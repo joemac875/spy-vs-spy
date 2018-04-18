@@ -1,5 +1,7 @@
 """
 The malicious Syndicate server for conducting the man-in-the-middle attack
+
+Authors: Joe MacInnes and Dylan Orris
 """
 from flask import Flask, Response, redirect, url_for, request, session, abort, g
 import requests

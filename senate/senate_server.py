@@ -1,5 +1,7 @@
 '''
 The legitimate Senate server for sending spies information.
+
+Authors: Joe MacInnes and Dylan Orris
 '''
 
 from flask import Flask, Response, redirect, url_for, request, session, abort, g
