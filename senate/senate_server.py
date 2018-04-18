@@ -11,9 +11,10 @@ app = Flask(__name__)
 
 app.config.update(dict(
     DATABASE=os.path.join(app.root_path, 'spies.db'),
-    DEBUG=True,
+    DEBUG=False,
     SECRET_KEY='dankmemes_69'
 ))
+
 
 # flask-login
 login_manager = LoginManager()
@@ -121,4 +122,4 @@ def get_db():
 
 
 if __name__ == "__main__":
-    app.run()
+    app.run(host='127.0.0.1', port=12345)
