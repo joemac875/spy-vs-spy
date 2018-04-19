@@ -9,7 +9,7 @@ import requests, sqlite3, os
 app = Flask(__name__)
 
 # The url of the legitimate server
-senate_server = "http://wooster.edu"
+senate_server = "http://127.0.0.1:12345"
 app.config.update(dict(
     DEBUG=False,
     SECRET_KEY='this_is_the_malicious_server',
