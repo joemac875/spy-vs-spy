@@ -71,8 +71,11 @@ def login():
     else:
         # Return the login form if a GET request
         return Response('''
+        <h1> Official Azorius Senate Spy Service </h1>
         <form action="" method="post">
+            <p>username
             <p><input type=text name=username>
+             <p>password
             <p><input type=password name=password>
             <p><input type=submit value=Login>
         </form>
@@ -124,4 +127,4 @@ def get_db():
 
 
 if __name__ == "__main__":
-    app.run(host='127.0.0.1', port=12345)
+    app.run(app.run(host='127.0.0.1', port=12345))
