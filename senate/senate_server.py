@@ -2,6 +2,7 @@
 The legitimate Senate server for sending spies information.
 
 Authors: Joe MacInnes and Dylan Orris
+Date: May, 2018
 '''
 
 from flask import Flask, Response, redirect, url_for, request, session, abort, g
@@ -14,9 +15,8 @@ app = Flask(__name__)
 app.config.update(dict(
     DATABASE=os.path.join(app.root_path, 'spies.db'),
     DEBUG=False,
-    SECRET_KEY='dankmemes_69'
+    SECRET_KEY='dankmemes_boi'
 ))
-
 
 # flask-login
 login_manager = LoginManager()
@@ -71,7 +71,7 @@ def login():
     else:
         # Return the login form if a GET request
         return Response('''
-        <h1> Official Azorius Senate Spy Service </h1>
+        <h1> Official Senate Spy Service </h1>
         <form action="" method="post">
             <p>username
             <p><input type=text name=username>
