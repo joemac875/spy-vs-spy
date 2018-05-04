@@ -98,4 +98,4 @@ def get_db():
 
 
 if __name__ == "__main__":
-    app.run(host='127.0.0.1', port=syndicate_server)
+    app.run(host='127.0.0.1', port=int(syndicate_server))
